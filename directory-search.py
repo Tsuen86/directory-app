@@ -58,6 +58,39 @@ This is a web app to add onto and search through a Directory.
 
 option = st.sidebar.selectbox(
      'Choose an Action:',
-     ('Add to Directory', 'Search Directory', 'Exit Directory'))
+     ('', 'Add to Directory', 'Search Directory', 'Print Directory', 'Exit Directory'))
 
 st.sidebar.write('You selected:', option)
+
+##########################################################
+    
+st.header("Add & Search: Live Directory\n\n")
+
+directory = LinkedList()
+
+while True:
+    print("\n\nYou selected: {}.\n".format(option))
+    if option == 'Exit Directory':
+        print("Thank you for using our service. ")
+        break
+    try:
+        if option=='Add to Directory':
+          
+            # Add data point to directory
+            item1 = input("\nPlease enter item to add to Directory.\n\n")
+            directory.append(item1)
+            print("\nItem Added: {}.".format(item1))
+
+        elif option=='Search Directory':
+            
+            item2 = input("\nPlease enter search item.\n\n")
+            directory.linearSearch(directory.headNode,item2)
+        
+        else:
+            directory.printList()
+         
+    
+    except ValueError:
+        print("\nPlease select an Action from the sidebar.\n\n")
+    
+    
