@@ -64,33 +64,33 @@ st.sidebar.write('You selected: '+ option)
 
 ##########################################################
     
-st.header("Add & Search: Live Directory\n\n")
+# st.header("Add & Search: Live Directory\n\n")
 
-directory = LinkedList()
+# directory = LinkedList()
 
-while True:
-    print("\n\nYou selected: {}.\n".format(option))
-    if option == 'Exit Directory':
-        print("Thank you for using our service. ")
-        break
-    try:
-        if option=='Add to Directory':
+# while True:
+#     print("\n\nYou selected: {}.\n".format(option))
+#     if option == 'Exit Directory':
+#         print("Thank you for using our service. ")
+#         break
+#     try:
+#         if option=='Add to Directory':
           
-            # Add data point to directory
-            item1 = input("\nPlease enter item to add to Directory.\n\n")
-            directory.append(item1)
-            print("\nItem Added: {}.".format(item1))
+#             # Add data point to directory
+#             item1 = input("\nPlease enter item to add to Directory.\n\n")
+#             directory.append(item1)
+#             print("\nItem Added: {}.".format(item1))
 
-        elif option=='Search Directory':
+#         elif option=='Search Directory':
             
-            item2 = input("\nPlease enter search item.\n\n")
-            directory.linearSearch(directory.headNode,item2)
+#             item2 = input("\nPlease enter search item.\n\n")
+#             directory.linearSearch(directory.headNode,item2)
         
-        else:
-            directory.printList()
+#         else:
+#             directory.printList()
          
     
-    except ValueError:
-        print("\nPlease select an Action from the sidebar.\n\n")
+#     except ValueError:
+#         print("\nPlease select an Action from the sidebar.\n\n")
     
     
