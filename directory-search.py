@@ -62,7 +62,7 @@ option = st.sidebar.selectbox(
 
 st.sidebar.write('You selected: ', option)
 
-##########################################################
+
     
 st.header("Add & Search: Live Directory\n\n")
 
