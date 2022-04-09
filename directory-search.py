@@ -60,7 +60,7 @@ option = st.sidebar.selectbox(
      'Choose an Action:',
      ['', 'Add to Directory', 'Search Directory', 'Print Directory', 'Exit Directory']
 
-st.sidebar.write('You selected:', option)
+st.sidebar.write('You selected: ' + option)
 
 ##########################################################
     
