@@ -1,3 +1,17 @@
+import streamlit as st 
+
+st.sidebar.write("""
+This is a web app to add onto and search through a Directory.
+""")
+
+option = st.sidebar.selectbox(
+     'Choose an Action:',
+     ('', 'Add to Directory', 'Search Directory', 'Print Directory', 'Exit Directory'))
+
+st.sidebar.write('You selected: ', option)
+
+##################################################
+
 # Establish Search Directory Definitions
 
 # Node class
@@ -50,19 +64,7 @@ class LinkedList:
         # Recur for remaining list 
         return self.linearSearch (headNode.nextNode, element) 
       
-import streamlit as st 
-
-st.sidebar.write("""
-This is a web app to add onto and search through a Directory.
-""")
-
-option = st.sidebar.selectbox(
-     'Choose an Action:',
-     ('', 'Add to Directory', 'Search Directory', 'Print Directory', 'Exit Directory'))
-
-st.sidebar.write('You selected: ', option)
-
-
+##################################################
     
 st.header("Add & Search: Live Directory\n\n")
 
